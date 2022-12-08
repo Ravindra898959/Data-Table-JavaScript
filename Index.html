@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Students Data</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label for="text">Name*</label><label class="validation-error hide"
+                            id="NameValidationError">This field is required.</label>
+                        <input type="text" name="Name" id="Name">
+
+
+                    </div>
+                    <div>
+
+                        <label for="text">Student Id </label>
+                        <input type="text" name="Student Id" id="studentid">
+                    </div>
+                    <div>
+                        <label for="text">Marks</label>
+                        <input type="text" name="Marks" id="marks">
+                    </div>
+                    <div class="form-action-buttons">
+
+                        <input type="submit" value="Add">
+                    </div>
+                </form>
+
+            </td>
+            <td>
+                <table class="list" id="student-list">
+                    <thead>
+                        <tr>
+                            <th>Student Id</th>
+                            <th>Marks</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+
+
+    <script src="./Ghostengines.js"></script>
+</body>
+
+</html>
